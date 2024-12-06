@@ -16,6 +16,8 @@ RUN pip install pillow
 
 #tambahin env
 ENV GOOGLE_APPLICATION_CREDENTIALS="service-account.json"
+ENV PORT 8080 
+ENV HOST 0.0.0.0
 
 # Jalankan aplikasi Flask
 CMD ["python", "app.py"]
